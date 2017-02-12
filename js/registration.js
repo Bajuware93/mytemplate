@@ -22,12 +22,12 @@ function ajax_req() {
     $.ajax({ //ajax request
         url: bob_unique.ajaxurl,
         data: {
-            'action':'server_req',
+            'action':'server_req',//PHP Methode die ausgefuehrt wird
             'reg_name': $('#reg_name').val(),
 			'reg_mail': $('#reg_mail').val(),
 			'reg_pw': $('#reg_pw').val()
         },
-        success:function(data) {  //result
+        success:function(data) {  //Wenn Antwort von Server(bzw server_reg) gekommen
          $(".showdiv").html(data); //showdiv is the class of the div where we want to show the results
         },
         error: function(errorThrown){

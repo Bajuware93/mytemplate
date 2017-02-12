@@ -34,7 +34,13 @@ function server_req() {
 		echo $mail;
 		echo $pw;
 		
-		wp_create_user( $name, $pw, $mail );
-	}
+		$user_id = username_exists( $name );
+		if ( !$user_id and email_exists($mail) == false ) {
+		$user_id = wp_create_user( $name, $pw, $mail );
+		echo "User wurde erfolgreich angelegt";
+		} else {
+		echo "User existiert bereits";
+		}
 die();
+}
 }
