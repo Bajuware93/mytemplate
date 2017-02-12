@@ -33,6 +33,8 @@ function server_req() {
 		echo $name;
 		echo $mail;
 		echo $pw;
+		
+		wp_create_user( $name, $pw, $mail );
 	}
 die();
 }
