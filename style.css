@@ -1,0 +1,67 @@
+/*
+Theme Name: MyTemplate
+Description: Test
+Author: Timo Engler
+
+*/
+
+
+
+
+
+body
+{
+	color: #333;
+	background: #e5e5e5;
+
+}
+
+#wrapper 
+{
+	width: 850px;
+	margin: auto;
+	text-align:left;
+	background-color: #fff;
+}
+
+#header 
+{
+	height: 160px;
+	padding: 20px;
+	border-bottom: 5px solid #ccc;
+}
+
+#main 
+{
+	width: 520px;
+/*	padding: 20px; Wenn nur ein Wert: verschiebt in alle Richtungen */
+	float: left; 
+	
+	
+}
+
+#sidebar 
+{
+	width: 270px;
+	float: left;
+}
+
+#footer 
+{
+	clear: both;
+	height: 100px;
+	padding: 20px;
+}
+
+#category{
+	
+	list-style: none;
+	
+}
+
+.klasse{
+	
+	color:red;
+	
+}
+
