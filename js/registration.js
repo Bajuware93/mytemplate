@@ -20,7 +20,7 @@
 function ajax_req() {
  
     $.ajax({ //ajax request
-        url: bob_unique.ajaxurl,
+        url: timo_unique.ajaxurl,
         data: {
             'action':'server_req',//PHP Methode die ausgefuehrt wird
             'reg_name': $('#reg_name').val(),

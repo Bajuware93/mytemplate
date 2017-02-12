@@ -18,7 +18,7 @@ add_action( 'wp_enqueue_scripts', 'add_theme_scripts' );
 function hook_ajax_script(){
          wp_enqueue_script( 'my_ajax_script', get_bloginfo('template_url')."/js/registration.js" );
 		 
-		 wp_localize_script( 'my_ajax_script', 'bob_unique', array(
+		 wp_localize_script( 'my_ajax_script', 'timo_unique', array(
         'ajaxurl' => admin_url( 'admin-ajax.php' ),
         'title' => get_the_title(),
     )
