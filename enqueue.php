@@ -28,5 +28,5 @@ function hook_ajax_script(){
 //Actions für Backend und Frontend
 add_action( 'wp_enqueue_scripts', 'hook_ajax_script' );
 add_action( 'admin_enqueue_scripts', 'hook_ajax_script' );
-
+//blabla
 ?>
